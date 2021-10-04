@@ -10,7 +10,7 @@ public class ElementActions {
 
     public void darClic(WebDriver driver, String xpath) throws InterruptedException {
         WebElement element = driver.findElement(By.xpath(xpath));
-        //Miscellaneous.highLighterMethod(driver,element);
+        Miscellaneous.highLighterMethod(driver,element);
         element.click();
     }
 
@@ -18,7 +18,7 @@ public class ElementActions {
         String seleccionar = Keys.chord(Keys.CONTROL, Keys.SHIFT, Keys.HOME);
         WebElement element = driver.findElement(By.xpath(xpath));
         element.click();
-        //Miscellaneous.highLighterMethod(driver,element);
+        Miscellaneous.highLighterMethod(driver,element);
         element.sendKeys(seleccionar + valor);
     }
 

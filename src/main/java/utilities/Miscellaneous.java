@@ -9,8 +9,8 @@ public class Miscellaneous {
     public static void highLighterMethod(WebDriver driver, WebElement element) throws InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript(
-                "arguments[0].setAttribute('style', 'background: green; border: 3px solid blue;');", element);
-        Thread.sleep(3000);
-        js.executeScript("arguments[0].removeAttribute('style','')", element);
+                "arguments[0].setAttribute('style','border: solid 3px red');", element);
+        //Thread.sleep(3000);
+        //js.executeScript("arguments[0].removeAttribute('style','')", element);
     }
 }
